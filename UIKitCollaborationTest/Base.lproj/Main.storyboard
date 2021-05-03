@@ -60,10 +60,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-OR-euy">
-                                <rect key="frame" x="186" y="433" width="42" height="30"/>
-                                <state key="normal" title="Count"/>
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
                                 <connections>
-                                    <action selector="didTapCount:" destination="yQB-DA-cvm" eventType="touchUpInside" id="TPM-Fy-q8I"/>
+                                    <action selector="didTapAdd:" destination="yQB-DA-cvm" eventType="touchUpInside" id="9Km-bi-8yQ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnG-eQ-sjo">
