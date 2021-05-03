@@ -19,6 +19,7 @@ class CounterViewController: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var countNumberTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

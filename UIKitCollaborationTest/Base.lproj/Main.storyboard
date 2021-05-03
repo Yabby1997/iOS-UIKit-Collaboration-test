@@ -54,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuh-Li-E9S">
-                                <rect key="frame" x="193" y="273" width="28" height="60"/>
+                                <rect key="frame" x="193" y="281" width="28" height="60"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,11 +66,19 @@
                                     <action selector="didTapCount:" destination="yQB-DA-cvm" eventType="touchUpInside" id="TPM-Fy-q8I"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnG-eQ-sjo">
+                                <rect key="frame" x="8" y="391" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="po1-YU-Cp5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aFd-OR-euy" firstAttribute="top" secondItem="Uuh-Li-E9S" secondAttribute="bottom" constant="100" id="SHp-bL-onm"/>
+                            <constraint firstItem="aFd-OR-euy" firstAttribute="top" secondItem="dnG-eQ-sjo" secondAttribute="bottom" constant="8" id="AkH-aB-NKV"/>
+                            <constraint firstItem="dnG-eQ-sjo" firstAttribute="leading" secondItem="po1-YU-Cp5" secondAttribute="leading" constant="8" id="NSk-i3-0ex"/>
+                            <constraint firstItem="dnG-eQ-sjo" firstAttribute="top" secondItem="Uuh-Li-E9S" secondAttribute="bottom" constant="50" id="PHH-Yq-mnq"/>
+                            <constraint firstItem="po1-YU-Cp5" firstAttribute="trailing" secondItem="dnG-eQ-sjo" secondAttribute="trailing" constant="8" id="Qkp-DE-I8D"/>
                             <constraint firstItem="Uuh-Li-E9S" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="kEu-lg-wRk"/>
                             <constraint firstItem="aFd-OR-euy" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="s3u-LF-Quz"/>
                             <constraint firstItem="aFd-OR-euy" firstAttribute="centerY" secondItem="AOz-eM-LmH" secondAttribute="centerY" id="uYd-gd-OS1"/>
@@ -78,6 +86,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ucq-f4-XG3"/>
                     <connections>
+                        <outlet property="countNumberTextField" destination="dnG-eQ-sjo" id="7A8-je-tum"/>
                         <outlet property="counterLabel" destination="Uuh-Li-E9S" id="Nz2-JG-05X"/>
                     </connections>
                 </viewController>
