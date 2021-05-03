@@ -37,17 +37,41 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Counter View Controller-->
         <scene sceneID="KpM-Hx-dvH">
             <objects>
-                <viewController id="yQB-DA-cvm" sceneMemberID="viewController">
+                <viewController id="yQB-DA-cvm" customClass="CounterViewController" customModule="UIKitCollaborationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AOz-eM-LmH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuh-Li-E9S">
+                                <rect key="frame" x="193" y="273" width="28" height="60"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-OR-euy">
+                                <rect key="frame" x="186" y="433" width="42" height="30"/>
+                                <state key="normal" title="Count"/>
+                                <connections>
+                                    <action selector="didTapCount:" destination="yQB-DA-cvm" eventType="touchUpInside" id="TPM-Fy-q8I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="po1-YU-Cp5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aFd-OR-euy" firstAttribute="top" secondItem="Uuh-Li-E9S" secondAttribute="bottom" constant="100" id="SHp-bL-onm"/>
+                            <constraint firstItem="Uuh-Li-E9S" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="kEu-lg-wRk"/>
+                            <constraint firstItem="aFd-OR-euy" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="s3u-LF-Quz"/>
+                            <constraint firstItem="aFd-OR-euy" firstAttribute="centerY" secondItem="AOz-eM-LmH" secondAttribute="centerY" id="uYd-gd-OS1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ucq-f4-XG3"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="Uuh-Li-E9S" id="Nz2-JG-05X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2J-Tr-Juq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
