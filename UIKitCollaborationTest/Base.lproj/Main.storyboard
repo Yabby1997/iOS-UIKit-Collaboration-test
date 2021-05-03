@@ -71,14 +71,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-Kr-iIc">
+                                <rect key="frame" x="192" y="471" width="30" height="30"/>
+                                <state key="normal" title="Sub"/>
+                                <connections>
+                                    <action selector="didTapSub:" destination="yQB-DA-cvm" eventType="touchUpInside" id="txM-Xe-VFW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="po1-YU-Cp5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aFd-OR-euy" firstAttribute="top" secondItem="dnG-eQ-sjo" secondAttribute="bottom" constant="8" id="AkH-aB-NKV"/>
                             <constraint firstItem="dnG-eQ-sjo" firstAttribute="leading" secondItem="po1-YU-Cp5" secondAttribute="leading" constant="8" id="NSk-i3-0ex"/>
+                            <constraint firstItem="Xm6-Kr-iIc" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="P5z-H6-dsa"/>
                             <constraint firstItem="dnG-eQ-sjo" firstAttribute="top" secondItem="Uuh-Li-E9S" secondAttribute="bottom" constant="50" id="PHH-Yq-mnq"/>
                             <constraint firstItem="po1-YU-Cp5" firstAttribute="trailing" secondItem="dnG-eQ-sjo" secondAttribute="trailing" constant="8" id="Qkp-DE-I8D"/>
+                            <constraint firstItem="Xm6-Kr-iIc" firstAttribute="top" secondItem="aFd-OR-euy" secondAttribute="bottom" constant="8" id="VvE-CE-ZvZ"/>
                             <constraint firstItem="Uuh-Li-E9S" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="kEu-lg-wRk"/>
                             <constraint firstItem="aFd-OR-euy" firstAttribute="centerX" secondItem="AOz-eM-LmH" secondAttribute="centerX" id="s3u-LF-Quz"/>
                             <constraint firstItem="aFd-OR-euy" firstAttribute="centerY" secondItem="AOz-eM-LmH" secondAttribute="centerY" id="uYd-gd-OS1"/>

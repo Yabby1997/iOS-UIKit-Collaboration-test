@@ -33,4 +33,9 @@ class CounterViewController: UIViewController {
     @IBAction func didTapCount(_ sender: Any) {
         count += 1
     }
+    
+    @IBAction func didTapSub(_ sender: Any) {
+        guard let countNum = countNumberTextField.text else { return }
+        self.count -= (Int(countNum) ?? 0)
+    }
 }
